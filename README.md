@@ -24,3 +24,7 @@ frequency = 327
 duration = 1000
 beep(frequency, duration) # duration in ms, frequency in Hz
 ```
+
+## Demo
+
+<https://github.com/donno2048/canon>
