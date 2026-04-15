@@ -2,7 +2,7 @@ from setuptools import setup, Extension
 from os import name
 setup(
     name='python-beep',
-    version='1.0.1',
+    version='1.0.2',
     license='MIT',
     author='Elisha Hollander',
     author_email='just4now666666@gmail.com',
@@ -15,12 +15,13 @@ setup(
         'Bug Reports': 'https://github.com/donno2048/beep/issues',
         'Source Code': 'https://github.com/donno2048/beep'
     },
-    ext_modules=[Extension('beep', ['beep.c'])] if name == 'nt' else None,
+    ext_modules=[Extension('beep', ['beep\\beep.c'])] if name == 'nt' else None,
     classifiers=[
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3"
     ],
     zip_safe = False,
-    platforms=["win32"]
+    platforms=["win32"],
+    include_package_data=True
 )
