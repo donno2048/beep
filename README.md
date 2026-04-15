@@ -4,6 +4,11 @@ A Python module to generate sounds
 
 ## Installation
 
+> [!WARNING]
+> The package will be installed on non-Windows platforms with no errors.
+> 
+> This is for automation purposes only, as the package will only work on Windows.
+
 ### From PyPI
 
 ```sh
